@@ -1,0 +1,34 @@
+/*APP.JS*/
+main{
+    min-height: calc(100vh - 56px - 80px);
+}
+/*HOME*/
+.homeContainer{
+    min-height: calc(100vh - 56px - 80px);
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+}
+/*ABOUT*/
+.aboutContainer{
+    min-height: calc(100vh - 56px - 80px);
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutContainer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*CONTACT*/
+.contactContainer{
+    min-height: calc(100vh - 56px - 80px);
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    margin-top: 2em;
+}

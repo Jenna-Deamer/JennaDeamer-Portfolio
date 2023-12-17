@@ -1,9 +1,9 @@
 
 function Header (){
     return(
-       <nav className="navbar navbar-expand-lg navbar-dark shadow">
+       <nav className="navbar navbar-expand-lg navbar-light bg-light shadow">
       <a className="navbar-brand mx-4" href="/" id="home">
-        Jenna Deamer
+        JD
       </a>
       <button
         className="navbar-toggler"
@@ -28,11 +28,6 @@ function Header (){
               Projects
             </a>
           </li>
-          {/* <li className="nav-item">
-            <a className="nav-link" href="/">
-              Skills
-            </a>
-          </li> */}
           <li className="nav-item">
             <a className="nav-link" href="/contact" id="contact">
               Contact
