@@ -1,15 +1,15 @@
 
-function Header (){
-    return(
-       <nav className="navbar navbar-expand-lg navbar-light bg-light shadow">
+function Header() {
+  return (
+    <nav className="navbar navbar-expand-lg navbar-light bg-light shadow">
       <a className="navbar-brand mx-4" href="/" id="home">
         JD
       </a>
       <button
         className="navbar-toggler"
         type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
         aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
@@ -36,8 +36,8 @@ function Header (){
         </ul>
       </div>
     </nav>
-      
-    )
+
+  )
 }
 
 export default Header;
