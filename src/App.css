@@ -1,34 +1,68 @@
-/*APP.JS*/
-main{
-    min-height: calc(100vh - 56px - 80px);
-}
-/*HOME*/
-.homeContainer{
-    min-height: calc(100vh - 56px - 80px);
-    display:  flex;
+/* APP.CSS */
+
+/* Main container */
+main {
+    min-height: calc(100vh - 56px - 86px);
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 86px;
+    /*Padding equal to footer height*/
 }
-/*ABOUT*/
-.aboutContainer{
-    min-height: calc(100vh - 56px - 80px);
-    display:  flex;
-    justify-content: center;
-    align-items: center;
+
+nav {
+    margin-bottom: 2em;
 }
-.aboutContainer p{
+
+/* Page Containers */
+.homeContainer,
+.aboutContainer,
+.skillsContainer,
+.contactContainer {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-/*CONTACT*/
-.contactContainer{
-    min-height: calc(100vh - 56px - 80px);
-    display:  flex;
+
+/* ABOUT & SKILLS */
+#descriptionWrapper{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.aboutContainer img{
+    border-radius: 10px;
+}
+.skillsContainer svg {
+    width: 50px;
+    height: 50px;
+    margin-inline-start: 1em;
+}
 
-footer{
-    margin-top: 2em;
+@media screen and (max-width: 770px) {
+    .aboutContainer {
+        display: flex;
+        text-align: center;
+      }
+      
+    .aboutContainer img {
+        margin-top: 1em;
+    }
+    #buttonsWrapper{
+        display: flex;
+        gap: 10px;
+    }
+}
+
+footer {
+    background-color: #f5f5f5;
+}
+
+
+
+
+footer a {
+    font-size: 20px;
 }
