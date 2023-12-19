@@ -12,7 +12,7 @@ function About() {
               dedicated to mobile-first development. 
             </p>
             
-            <div id="buttonsWrapper">
+            <div className="buttonsWrapper">
               <a className="btn btn-primary" href="/projects">
                 View Work
               </a>

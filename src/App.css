@@ -19,22 +19,23 @@ nav {
 .homeContainer,
 .aboutContainer,
 .skillsContainer,
-.contactContainer {
+.contactContainer,
+.projectsContainer{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.buttonsWrapper{
+    display: flex;
+    gap: 10px;
+}
 /* ABOUT & SKILLS */
 #descriptionWrapper{
     display: flex;
     flex-direction: column;
    justify-content: center;
    align-items: center; 
-}
-#buttonsWrapper{
-    display: flex;
-    gap: 10px;
 }
 .aboutContainer img{
     border-radius: 10px;
