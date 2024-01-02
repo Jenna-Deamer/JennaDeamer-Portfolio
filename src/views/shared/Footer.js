@@ -8,7 +8,7 @@ function Footer() {
           target="_blank" rel="noopener noreferrer"
         >
           <i className="bi bi-linkedin"></i>
-          
+
         </a>
         <a
           href="https://github.com/Jenna-Deamer"
