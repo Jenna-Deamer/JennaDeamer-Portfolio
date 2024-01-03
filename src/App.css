@@ -52,6 +52,13 @@ nav {
     /* margin-inline-start: 1em; */
 }
 
+@media screen and (max-width: 770px) {
+    .aboutContainer img {
+        margin-top: 1em;
+    }
+
+}
+
 /*PROJECTS PAGE*/
 .projectCard>img {
     /*16:9*/
@@ -60,12 +67,37 @@ nav {
     /* max-height: 388px; */
 }
 
-@media screen and (max-width: 770px) {
-    .aboutContainer img {
-        margin-top: 1em;
+/*Center Stack layout at bootstrap grid breakpoints*/
+@media screen and (max-width: 992px) {
+
+    .projectCard {
+        text-align: center;
+
     }
 
+    /*Add space between header & the content above it*/
+    .projectCard h2 {
+        margin-top: 20px;
+    }
+
+    /*Space between the edge of the screen & thumbnails*/
+    .projectCard img {
+        padding: 10px;
+    }
+
+    /*Centers & stacks buttons*/
+    .buttonsWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*Space between buttons & footer*/
+    .buttonsWrapper:last-of-type {
+        margin-bottom: 1em;
+    }
 }
+
 
 /*CONTACT*/
 textarea {
