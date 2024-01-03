@@ -1,7 +1,7 @@
 
 function Header() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light shadow">
+    <nav className="navbar navbar-expand-lg navbar-dark shadow">
       <a className="navbar-brand mx-4" href="/" id="home">
         JD
       </a>

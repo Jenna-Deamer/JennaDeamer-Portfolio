@@ -19,7 +19,7 @@ function Footer() {
         </a>
 
         <a
-          href="https://drive.google.com/file/d/1HuoNkCL0UTtoxqY9WMNzQhg0P3--4BDc/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1dP4kPuOhvp-tn2ijyywbBQbSjjvp0-J8/view?usp=sharing"
           className="socialLinkBtn border-0"
           target="_blank" rel="noopener noreferrer"
         >
