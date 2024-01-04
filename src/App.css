@@ -3,17 +3,19 @@
 :root{
     --primary-color: #0B2B40;
     --text-color: #F5F5F5;
-
-    --action-color: #9262F5;
-    --action-color-hover: #6c48b4;
-    --action-active-color: #543a8c;   
+    --black: #0A0A0A;
+    
+    --action-color: #e07c1f;
+    --action-color-hover: #ff9e4f; 
+    --action-active-color: #ff7e00; 
 }
 html{
     font-family: 'Roboto', sans-serif;
 }
+
 /* Main container */
 main {
-    min-height: calc(100vh - 40px - 86px);
+    min-height: calc(100vh - 86px - 86px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,6 +29,7 @@ main {
 nav {
     background-color: var(--primary-color);
  }
+
 h1,h2,h3,h4{
     font-family: 'Philosopher', sans-serif;
 }
@@ -37,6 +40,7 @@ p{
 .btnPrimary,
 .btnSecondary {
     color: var(--text-color);
+    font-weight: 600;
     text-decoration: none;
     vertical-align: middle;
     padding: .5em 1em;
@@ -146,10 +150,10 @@ p{
         align-items: center;
     }
 
-    /*Space between buttons & footer*/
-    /* .buttonsWrapper:last-of-type {
+    /* Space between buttons & footer*/
+    .buttonsWrapper:last-of-type {
         margin-bottom: 1em;
-    } */
+    }
 }
 
 /*CONTACT*/
