@@ -1,7 +1,7 @@
 function Contact() {
   return (
     <>
-      <h1 className="text-center">Let's Get In Touch!</h1>
+      <h1 className="text-center" id="formHeader">Let's Get In Touch!</h1>
       <section className="container pageContainer">
       <form  action="https://formsubmit.co/jennadeamer@gmail.com" method="POST" className="container">
                 <fieldset className="row justify-content-center ">

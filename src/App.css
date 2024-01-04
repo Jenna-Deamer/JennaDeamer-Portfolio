@@ -1,15 +1,18 @@
 /* APP.CSS */
 @import url('https://fonts.googleapis.com/css2?family=Philosopher&family=Roboto&display=swap');
-:root{
+
+:root {
     --primary-color: #0B2B40;
     --text-color: #F5F5F5;
     --black: #0A0A0A;
-    
+
+    --accent:  #fda95b;
     --action-color: #e07c1f;
-    --action-color-hover: #ff9e4f; 
-    --action-active-color: #ff7e00; 
+    --action-color-hover: #ff9e4f;
+    --action-active-color: #ff7e00;
 }
-html{
+
+html {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -26,16 +29,22 @@ main {
     color: var(--text-color);
     background-image: linear-gradient(52deg, rgba(163, 163, 163, 0.09) 0%, rgba(163, 163, 163, 0.09) 33.3%, rgba(100, 100, 100, 0.09) 33.3%, rgba(100, 100, 100, 0.09) 66.6%, rgba(162, 162, 162, 0.09) 66.6%, rgba(162, 162, 162, 0.09) 99%), linear-gradient(258deg, rgba(193, 193, 193, 0.06) 0%, rgba(193, 193, 193, 0.06) 33.3%, rgba(169, 169, 169, 0.06) 33.3%, rgba(169, 169, 169, 0.06) 66.6%, rgba(92, 92, 92, 0.06) 66.6%, rgba(92, 92, 92, 0.06) 99%), linear-gradient(129deg, rgba(45, 45, 45, 0.03) 0%, rgba(45, 45, 45, 0.03) 33.3%, rgba(223, 223, 223, 0.03) 33.3%, rgba(223, 223, 223, 0.03) 66.6%, rgba(173, 173, 173, 0.03) 66.6%, rgba(173, 173, 173, 0.03) 99%), linear-gradient(280deg, rgba(226, 226, 226, 0.06) 0%, rgba(226, 226, 226, 0.06) 33.3%, rgba(81, 81, 81, 0.06) 33.3%, rgba(81, 81, 81, 0.06) 66.6%, rgba(186, 186, 186, 0.06) 66.6%, rgba(186, 186, 186, 0.06) 99%), linear-gradient(85deg, rgba(225, 225, 225, 0.04) 0%, rgba(225, 225, 225, 0.04) 33.3%, rgba(95, 95, 95, 0.04) 33.3%, rgba(95, 95, 95, 0.04) 66.6%, rgba(39, 39, 39, 0.04) 66.6%, rgba(39, 39, 39, 0.04) 99%), linear-gradient(128deg, rgba(184, 184, 184, 0.06) 0%, rgba(184, 184, 184, 0.06) 33.3%, rgba(0, 0, 0, 0.06) 33.3%, rgba(0, 0, 0, 0.06) 66.6%, rgba(140, 140, 140, 0.06) 66.6%, rgba(140, 140, 140, 0.06) 99.89999999999999%), linear-gradient(323deg, rgba(40, 40, 40, 0.07) 0%, rgba(40, 40, 40, 0.07) 33.3%, rgba(214, 214, 214, 0.07) 33.3%, rgba(214, 214, 214, 0.07) 66.6%, rgba(190, 190, 190, 0.07) 66.6%, rgba(190, 190, 190, 0.07) 99.89999999999999%), linear-gradient(61deg, rgba(230, 230, 230, 0) 0%, rgba(230, 230, 230, 0) 33.3%, rgba(241, 241, 241, 0) 33.3%, rgba(241, 241, 241, 0) 66.6%, rgba(55, 55, 55, 0) 66.6%, rgba(55, 55, 55, 0) 99%), linear-gradient(0deg, #2625e3, #0bbaef);
 }
+
 nav {
     background-color: var(--primary-color);
- }
+}
 
-h1,h2,h3,h4{
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Philosopher', sans-serif;
 }
-p{
+
+p {
     font-size: 18px;
 }
+
 /*BUTTONS*/
 .btnPrimary,
 .btnSecondary {
@@ -48,6 +57,7 @@ p{
     border: 2px solid var(--action-color);
     transition: background-color 0.3s ease;
 }
+
 .btnPrimary {
     background-color: var(--action-color);
 }
@@ -59,17 +69,19 @@ p{
 .btnPrimary:hover,
 .btnPrimary:focus,
 .btnSecondary:hover,
-.btnSecondary:focus{
+.btnSecondary:focus {
     background-color: var(--action-color-hover);
-  
+
 }
-.btnPrimary:focus{
+
+.btnPrimary:focus {
     outline: none;
     box-shadow: 0 0 0 2px var(--action-color);
 }
+
 .btnPrimary:active {
     background-color: var(--action-active-color);
-  }
+}
 
 /* Page Containers */
 .pageContainer,
@@ -77,8 +89,18 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
-
+.pageContainer h1{
+    color: var(--black);
+}
+.skillsContainer{
+    /*Improve logo visibility on lightBlue BG*/
+    background-color: rgba(11, 43, 64, .7);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
 .buttonsWrapper {
     display: flex;
     gap: 10px;
@@ -100,8 +122,6 @@ p{
     max-width: 100px;
     max-height: 100px;
     margin: 1em;
-    /* display: block; */
-    /* margin-inline-start: 1em; */
 }
 
 @media screen and (max-width: 770px) {
@@ -112,17 +132,32 @@ p{
 }
 
 /*PROJECTS PAGE*/
-  /* Fixed width P makes content remain aligned */
-  .projectCard p {
-    height: 3rem; 
-   
-  }
-  @media screen and (max-width: 1300px) {
-       /*Space between the edge of the screen & thumbnails*/
-       .projectCard img,p,small,h2 .buttonsWrapper {
+/*ProjectCard Hover Animation*/
+.projectCard a.hovered img {
+    opacity: .8;
+  transform: scale(1.05);
+  transition: .5s;
+}
+/* .projectCard h2{
+    color: var(--black);
+} */
+/* Fixed width P makes content remain aligned */
+.projectCard p {
+    height: 3rem;
+
+}
+
+@media screen and (max-width: 1300px) {
+
+    /*Space between the edge of the screen & thumbnails*/
+    .projectCard img,
+    p,
+    small,
+    h2 .buttonsWrapper {
         padding: 10px;
     }
-  }
+}
+
 /*Center Stack layout at bootstrap grid breakpoints*/
 @media screen and (max-width: 992px) {
 
@@ -130,9 +165,11 @@ p{
         text-align: center;
 
     }
+
     .projectCard p {
         height: 58px;
     }
+
     /*Add space between header & the content above it*/
     .projectCard h2 {
         margin-top: 20px;
@@ -157,9 +194,13 @@ p{
 }
 
 /*CONTACT*/
+/* #formHeader{
+    color: var(--black);
+} */
 textarea {
     max-height: 200px;
 }
+
 /*FOOTER*/
 footer {
     background-color: var(--primary-color);
@@ -171,7 +212,8 @@ footer a {
     font-size: 20px;
     color: var(--text-color);
 }
-footer a:hover{
+
+footer a:hover {
     transition: .5s;
     color: var(--action-color);
 }

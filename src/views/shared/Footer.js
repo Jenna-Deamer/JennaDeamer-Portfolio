@@ -6,7 +6,7 @@ function Footer() {
           href="https://www.linkedin.com/in/jenna-deamer-51b741251/"
           className="me-4 socialLinkBtn border-0"
           target="_blank" rel="noopener noreferrer"
-          aria-label="Visit Jenna Deamer's linkedin "
+          aria-label="Visit Jenna Deamer's linkedin"
         >
           <i className="bi bi-linkedin"></i>
 
@@ -15,7 +15,7 @@ function Footer() {
           href="https://github.com/Jenna-Deamer"
           className="socialLinkBtn border-0 me-4"
           target="_blank" rel="noopener noreferrer"
-          aria-label="Visit Jenna Deamer's github "
+          aria-label="Visit Jenna Deamer's github"
         >
           <i className="bi bi-github"></i>
         </a>
@@ -31,7 +31,7 @@ function Footer() {
       </div>
 
       <div className="text-center p-2" id="copyrightFooter">
-        <small>&copy;2023 Jenna Deamer</small>
+        <small>&copy;2024 Jenna Deamer</small>
       </div>
     </footer>
   );
