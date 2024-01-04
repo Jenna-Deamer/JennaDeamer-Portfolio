@@ -108,8 +108,17 @@ p{
 }
 
 /*PROJECTS PAGE*/
-
-
+  /* Fixed width P makes content remain aligned */
+  .projectCard p {
+    height: 3rem; 
+   
+  }
+  @media screen and (max-width: 1300px) {
+       /*Space between the edge of the screen & thumbnails*/
+       .projectCard img,p,small,h2 .buttonsWrapper {
+        padding: 10px;
+    }
+  }
 /*Center Stack layout at bootstrap grid breakpoints*/
 @media screen and (max-width: 992px) {
 
@@ -117,7 +126,9 @@ p{
         text-align: center;
 
     }
-
+    .projectCard p {
+        height: 58px;
+    }
     /*Add space between header & the content above it*/
     .projectCard h2 {
         margin-top: 20px;
@@ -136,9 +147,9 @@ p{
     }
 
     /*Space between buttons & footer*/
-    .buttonsWrapper:last-of-type {
+    /* .buttonsWrapper:last-of-type {
         margin-bottom: 1em;
-    }
+    } */
 }
 
 /*CONTACT*/

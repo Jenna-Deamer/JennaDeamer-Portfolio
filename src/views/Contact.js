@@ -3,7 +3,7 @@ function Contact() {
     <>
       <h1 className="text-center">Let's Get In Touch!</h1>
       <section className="container pageContainer">
-      <form action="https://formsubmit.co/JennaDeamer@gmail.com"  method="POST" className="container">
+      <form  action="https://formsubmit.co/jennadeamer@gmail.com" method="POST" className="container">
                 <fieldset className="row justify-content-center ">
                     <div className="col-md-6">
                         <label htmlFor="name" className="mt-2"><i className="bi bi-person"></i> Name:</label>
