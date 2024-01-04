@@ -27,20 +27,30 @@ main {
 nav {
    background-color: var(--primary-color);
 }
-.btnPrimary{
-    background-color: var(--action-color);
+
+/*BUTTONS*/
+.btnPrimary,
+.btnSecondary {
     color: var(--text-color);
     text-decoration: none;
     vertical-align: middle;
     padding: .5em 1em;
     border-radius: 8px;
-    border: 2px solid transparent;
+    border: 2px solid var(--action-color);
     transition: background-color 0.3s ease;
 }
+.btnPrimary {
+    background-color: var(--action-color);
+}
 
-/*BUTTONS*/
+.btnSecondary {
+    background-color: transparent;
+}
+
 .btnPrimary:hover,
-.btnPrimary:focus{
+.btnPrimary:focus,
+.btnSecondary:hover,
+.btnSecondary:focus{
     background-color: var(--action-color-hover);
   
 }
@@ -138,8 +148,9 @@ footer {
 
 footer a {
     font-size: 20px;
-    color: var(--action-color);
+    color: var(--text-color);
 }
 footer a:hover{
-    color: var(--action-color-hover);
+    transition: .5s;
+    color: var(--action-color);
 }

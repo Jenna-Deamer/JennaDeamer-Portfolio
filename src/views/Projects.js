@@ -17,20 +17,20 @@ function Projects() {
           <small>React | Javascript | Bootstrap</small>
           <div className="buttonsWrapper pt-2">
             <a
-              className="btn btn-primary"
+              className="btnPrimary"
               href="https://comp-2112-assignment2.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Demo
+             <i className="bi bi-laptop"></i> Demo
             </a>
             <a
-              className="btn btn-primary"
+              className="btnSecondary"
               href="https://github.com/Jenna-Deamer/COMP2112-Assignment2"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Github
+              <i className="bi bi-github"></i> Github
             </a>
           </div>
         </article>
@@ -47,20 +47,20 @@ function Projects() {
           <small>HTML | CSS | Bootstrap</small>
           <div className="buttonsWrapper pt-2">
             <a
-              className="btn btn-primary"
+              className="btnPrimary"
               href="https://comp1051-finalproject.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Demo
+           <i className="bi bi-laptop"></i> Demo
             </a>
             <a
-              className="btn btn-primary"
+              className="btnSecondary"
               href="https://github.com/Jenna-Deamer/COMP1051-FinalProject"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Github
+              <i className="bi bi-github"></i> Github
             </a>
           </div>
         </article>

@@ -3,10 +3,15 @@ function Header() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark shadow">
       <a className="navbar-brand mx-4" href="/" id="home">
-        JD
+      <img
+      src="/images/jennaLogo.png"
+      alt="A white logo with the initials JD in a circle"
+    >
+      </img>
       </a>
+
       <button
-        className="navbar-toggler"
+        className="navbar-toggler me-2"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarNav"
@@ -17,7 +22,7 @@ function Header() {
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav">
+        <ul className="navbar-nav ms-3">
           <li className="nav-item">
             <a className="nav-link" href="/about" id="about">
               About

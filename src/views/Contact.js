@@ -23,7 +23,7 @@ function Contact() {
 
                 <div className="row align-items-center align-items-center  justify-content-center">
                     <div className="col-md-6 ">
-                        <button className="btn btn-info mt-4" type="submit">Submit</button>
+                        <button className="btnPrimary mt-4" type="submit">Submit</button>
                     </div>
                 </div>
             </form>
