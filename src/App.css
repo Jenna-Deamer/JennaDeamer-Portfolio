@@ -127,12 +127,17 @@ p {
 }
 
 @media screen and (max-width: 770px) {
+ 
     #aboutContainer img {
         margin-top: 1em;
     }
 
 }
-
+@media screen and (max-width: 990px){
+    #aboutContainer img{
+        height: 260px;
+    }
+}
 /*PROJECTS PAGE*/
 
 
