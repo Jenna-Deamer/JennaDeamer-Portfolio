@@ -11,7 +11,10 @@
     --action-color-hover: #ff9e4f;
     --action-active-color: #ff7e00;
 }
-
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
 html {
     font-family: 'Roboto', sans-serif;
 }
