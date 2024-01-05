@@ -165,14 +165,12 @@ p {
     transform: translate(-50%, -50%);
 }
 
-/* .projectCard h2{
-    color: var(--black);
-} */
 /* Fixed width P makes content remain aligned */
 .projectCard p {
     height: 3rem;
 
 }
+/*custom Modal Styles*/
 
 @media screen and (max-width: 1300px) {
 
