@@ -22,14 +22,14 @@ function Projects() {
       demoUrl: "https://comp1051-finalproject.netlify.app/",
     },
   ];
-  //hoverState false by default
-  const [isHovered, setIsHovered] = useState(false);
-  //update state when mouse is hovering or is not hovering IMG
-  const handleMouseEnter = () => {
-    setIsHovered(true);
+  //Mange hoverState for each card independently by using an array. 
+  const [hoverStates, setHoverStates] = useState({});
+  //When function is called, Pass in  the index of the card hovered/un-hovered & update state
+  const handleMouseEnter = (index) => {
+    setHoverStates({hoverStates,[index]: true});
   };
-  const handleMouseLeave = () => {
-    setIsHovered(false);
+  const handleMouseLeave = (index) => {
+    setHoverStates({hoverStates,[index]: false});
   };
 
   return (
@@ -38,12 +38,21 @@ function Projects() {
         {projectCards.map((card, index) => (
           <article key={index} className="col-lg-6 projectCard">
             <h2>{card.title}</h2>
-            <a href={card.demoUrl} target="_blank" rel="noopener noreferrer">
-              <img src={card.imgUrl} alt={card.imgAlt} />
+            <a href={card.demoUrl} target="_blank" rel="noopener noreferrer"
+             onMouseEnter={() => handleMouseEnter(index)}
+             onMouseLeave={() => handleMouseLeave(index)}
+             className={hoverStates[index] ? "hovered" : ""}>
+                {/** When hoverState is true for a card, Apply hovered CSS class. 
+             * Updates to false when the mouseLeaves, removing the CSS class */}
+              <img src={card.imgUrl} alt={card.imgAlt}
+              className="pb-2 img-fluid"
+               />
+               {hoverStates[index] && (
+                <span className="linkText">Click to view live demo</span>
+              )}
             </a>
             <p>{card.description}</p>
             <small>{card.skillText}</small>
-
             <div className="buttonsWrapper pt-2">
               <a
                 href={card.githubUrl}
@@ -52,7 +61,7 @@ function Projects() {
                 rel="noopener noreferrer"
                 aria-label="Readme"
               >
-                <i class="bi bi-file-earmark-code-fill"></i> ReadMe
+                <i className="bi bi-file-earmark-code-fill"></i> ReadMe
               </a>
               <a
                 href={card.githubUrl}
@@ -61,7 +70,7 @@ function Projects() {
                 rel="noopener noreferrer"
                 aria-label="Visit the github repository"
               >
-                <i class="bi bi-github"></i> Github
+                <i className="bi bi-github"></i> Github
               </a>
             </div>
           </article>

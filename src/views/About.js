@@ -17,7 +17,7 @@ function About() {
                 View Work
               </a>
               <a
-                className="btnPrimary"
+                className="btnSecondary"
                 href="https://drive.google.com/file/d/1dP4kPuOhvp-tn2ijyywbBQbSjjvp0-J8/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -29,7 +29,7 @@ function About() {
           </div>
           <figure className="col-md-6 text-center">
             <img
-              src="https://png.pngtree.com/png-vector/20220611/ourmid/pngtree-person-gray-photo-placeholder-woman-in-shirt-on-gray-background-png-image_4826227.png"
+              src="/images/profile.webp"
               alt="Jenna Deamer - Frontend Developer"
               id="aboutImage"
               className="img-fluid"

@@ -6,7 +6,7 @@
     --text-color: #F5F5F5;
     --black: #0A0A0A;
 
-    --accent:  #fda95b;
+    --accent: #fda95b;
     --action-color: #e07c1f;
     --action-color-hover: #ff9e4f;
     --action-active-color: #ff7e00;
@@ -89,18 +89,17 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
-.pageContainer h1{
-    color: var(--black);
-}
-.skillsContainer{
+
+.skillsContainer {
     /*Improve logo visibility on lightBlue BG*/
     background-color: rgba(11, 43, 64, .7);
     border-radius: 20px;
     margin-bottom: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .buttonsWrapper {
     display: flex;
     gap: 10px;
@@ -115,7 +114,7 @@ p {
 }
 
 #aboutContainer img {
-    border-radius: 10px;
+    border-radius: 16px;
 }
 
 .skillsContainer svg {
@@ -132,12 +131,32 @@ p {
 }
 
 /*PROJECTS PAGE*/
+
+
 /*ProjectCard Hover Animation*/
 .projectCard a.hovered img {
     opacity: .8;
-  transform: scale(1.05);
-  transition: .5s;
+    transform: scale(1.05);
+    transition: 0.3s ease-in;
 }
+
+/*Text styles & positioning on hover*/
+.projectCard a {
+    position: relative;
+}
+    
+.linkText {
+    position: absolute;
+    background-color: var(--action-color);
+    color: var(--text-color);
+    padding: 10px;
+    border-radius: 5px;
+    /* Position it relative to the container */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* .projectCard h2{
     color: var(--black);
 } */
