@@ -105,7 +105,7 @@ function Projects() {
               }}
             >
               <h2 className="text-center">{card.title}</h2>
-
+              
 
               <button onClick={() => modalClose(index)}>Close</button>
             </Modal>

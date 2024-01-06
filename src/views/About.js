@@ -42,7 +42,7 @@ function About() {
 
       <h2 className="text-center pb-2 pt-2">My Skills</h2>
 
-      <section className="container skillsContainer pb-4 row">
+      <section className="container skillsContainer row mb-2">
         <svg viewBox="0 0 128 128" className="col-md-3">
           <path
             fill="#E44D26"

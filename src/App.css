@@ -11,7 +11,28 @@
     --action-color-hover: #ff9e4f;
     --action-active-color: #ff7e00;
 }
-
+/*Animations*/
+@keyframes shake{
+    0% { 
+        transform: rotate(5deg); 
+    } 
+    
+    20% { 
+        transform: rotate(-8deg); 
+    } 
+    30%{
+      transform: rotate(-16deg);
+    }
+    60%{
+      transform: rotate(8deg)
+    }
+    50%{
+      transform: rotate(16deg);
+    }
+    100% { 
+        transform: rotate(-5deg); 
+    } 
+}
 
 html {
     font-family: 'Roboto', sans-serif;
@@ -119,23 +140,32 @@ p {
 }
 
 .skillsContainer svg {
+    transition: ease-in-out .2s;
     max-width: 100px;
-    max-height: 100px;
-    margin: 1em;
+    margin: 16px;
 }
-
+.skillsContainer svg:hover{
+    animation: shake 0.4s ease-in-out;
+    animation-iteration-count: 1;
+}
+@media screen and (max-width: 577px){
+    .skillsContainer {
+        padding: 10px;
+    }
+}
 @media screen and (max-width: 770px) {
 
     #aboutContainer img {
         margin-top: 1em;
     }
-
+   
 }
 
 @media screen and (max-width: 990px) {
     #aboutContainer img {
         height: 260px;
     }
+  
 }
 
 /*PROJECTS PAGE*/
@@ -170,8 +200,6 @@ p {
     height: 3rem;
 
 }
-
-/*custom Modal Styles*/
 
 @media screen and (max-width: 1300px) {
 
