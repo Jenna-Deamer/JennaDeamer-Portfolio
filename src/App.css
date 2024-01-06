@@ -1,5 +1,5 @@
 /* APP.CSS */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sansita&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Khula&family=Roboto&display=swap');
 :root {
     --primary-color: #0B2B40;
     --text-color: #F5F5F5;
@@ -56,17 +56,19 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: 'Sansita', sans-serif;
+    font-family: 'Khula', sans-serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
 }
-
+#heroHeader{
+    font-weight: 600;
+}
 p {
     font-size: 18px;
     
 }
 p,small{
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /*BUTTONS*/
