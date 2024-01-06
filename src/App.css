@@ -11,10 +11,8 @@
     --action-color-hover: #ff9e4f;
     --action-active-color: #ff7e00;
 }
-body {
-    overflow-x: hidden;
-    max-width: 100%;
-}
+
+
 html {
     font-family: 'Roboto', sans-serif;
 }
@@ -127,17 +125,19 @@ p {
 }
 
 @media screen and (max-width: 770px) {
- 
+
     #aboutContainer img {
         margin-top: 1em;
     }
 
 }
-@media screen and (max-width: 990px){
-    #aboutContainer img{
+
+@media screen and (max-width: 990px) {
+    #aboutContainer img {
         height: 260px;
     }
 }
+
 /*PROJECTS PAGE*/
 
 
@@ -152,7 +152,7 @@ p {
 .projectCard a {
     position: relative;
 }
-    
+
 .linkText {
     position: absolute;
     background-color: var(--action-color);
@@ -170,6 +170,7 @@ p {
     height: 3rem;
 
 }
+
 /*custom Modal Styles*/
 
 @media screen and (max-width: 1300px) {

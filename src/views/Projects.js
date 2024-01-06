@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Modal from "react-modal";
+
 Modal.setAppElement("#root"); //Accessibility
 function Projects() {
   const projectCards = [
@@ -23,6 +24,7 @@ function Projects() {
       demoUrl: "https://comp1051-finalproject.netlify.app/",
     },
   ];
+
   //Mange hoverState for each card independently by using an array.
   const [hoverStates, setHoverStates] = useState({});
   //When function is called, Pass in  the index of the card hovered/un-hovered & update state
@@ -36,14 +38,16 @@ function Projects() {
   const [isModalOpen, setIsModalOpen] = useState({});
   const modalOpen = (index) => {
     setIsModalOpen({ isModalOpen, [index]: true });
+    document.body.style.overflow = "hidden"; // Prevent scrolling on open modal
   };
   const modalClose = (index) => {
     setIsModalOpen({ isModalOpen, [index]: false });
+    document.body.style.overflow = "auto"; // Enable scrolling on modal close
   };
 
   return (
     <>
-      <section className="pageContainer row">
+      <section className="pageContainer row" id="projectsContainer">
         {projectCards.map((card, index) => (
           <article key={index} className="col-lg-6 projectCard">
             <h2>{card.title}</h2>
@@ -69,44 +73,46 @@ function Projects() {
             <p>{card.description}</p>
             <small>{card.skillText}</small>
             <div className="buttonsWrapper pt-2">
-              {/* <a
-                href={card.githubUrl}
-                className="btnPrimary"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Readme"
-              >
-               
-              </a> */}
-              <button
-                className="btnPrimary"
-                aria-label="open readMe"
-                onClick={() => modalOpen(index)}
-              >
-                <i className="bi bi-file-earmark-code-fill"></i> ReadMe
-              </button>
               <a
                 href={card.githubUrl}
-                className="btnSecondary"
+                className="btnPrimary"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Visit the github repository"
               >
                 <i className="bi bi-github"></i> Github
               </a>
+
+              <button
+                className="btnSecondary"
+                aria-label="opens a window on this page that contains more information about this project"
+                onClick={() => modalOpen(index)}
+              >
+                <i className="bi bi-file-earmark-code-fill"></i> More Detials
+              </button>
             </div>
+
             <Modal
               isOpen={isModalOpen[index]}
               onRequestClose={() => modalClose(index)}
+              style={{
+                overlay: {
+
+                },
+                content: {
+                  margin: 'auto',
+                },
+              }}
             >
-              <h2>{card.title}</h2>
-              
+              <h2 className="text-center">{card.title}</h2>
+
 
               <button onClick={() => modalClose(index)}>Close</button>
             </Modal>
+
           </article>
         ))}
-      </section>
+      </section >
     </>
   );
 }
