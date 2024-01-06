@@ -1,12 +1,11 @@
 /* APP.CSS */
-@import url('https://fonts.googleapis.com/css2?family=Philosopher&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sansita&display=swap');
 :root {
     --primary-color: #0B2B40;
     --text-color: #F5F5F5;
     --black: #0A0A0A;
 
-    --accent: #fda95b;
+    /* --accent: #fda95b; */
     --action-color: #e07c1f;
     --action-color-hover: #ff9e4f;
     --action-active-color: #ff7e00;
@@ -34,10 +33,6 @@
     } 
 }
 
-html {
-    font-family: 'Roboto', sans-serif;
-}
-
 /* Main container */
 main {
     min-height: calc(100vh - 86px - 86px);
@@ -45,6 +40,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* font-family: 'Roboto', sans-serif; */
     /*Padding equal to footer height*/
     padding-bottom: 86px;
     padding-top: 86px;
@@ -60,11 +56,17 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: 'Philosopher', sans-serif;
+    font-family: 'Sansita', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
 }
 
 p {
     font-size: 18px;
+    
+}
+p,small{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /*BUTTONS*/
@@ -111,7 +113,6 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .skillsContainer {
@@ -202,13 +203,16 @@ p {
 }
 
 @media screen and (max-width: 1300px) {
-
     /*Space between the edge of the screen & thumbnails*/
     .projectCard img,
     p,
     small,
-    h2 .buttonsWrapper {
-        padding: 10px;
+    h2, .buttonsWrapper {
+        padding: 20px;
+    }
+    .projectCard p {
+        height: 4rem;
+    
     }
 }
 

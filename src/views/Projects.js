@@ -35,15 +35,15 @@ function Projects() {
     setHoverStates({ hoverStates, [index]: false });
   };
   //track modal open & close state
-  const [isModalOpen, setIsModalOpen] = useState({});
-  const modalOpen = (index) => {
-    setIsModalOpen({ isModalOpen, [index]: true });
-    document.body.style.overflow = "hidden"; // Prevent scrolling on open modal
-  };
-  const modalClose = (index) => {
-    setIsModalOpen({ isModalOpen, [index]: false });
-    document.body.style.overflow = "auto"; // Enable scrolling on modal close
-  };
+  // const [isModalOpen, setIsModalOpen] = useState({});
+  // const modalOpen = (index) => {
+  //   setIsModalOpen({ isModalOpen, [index]: true });
+  //   document.body.style.overflow = "hidden"; // Prevent scrolling on open modal
+  // };
+  // const modalClose = (index) => {
+  //   setIsModalOpen({ isModalOpen, [index]: false });
+  //   document.body.style.overflow = "auto"; // Enable scrolling on modal close
+  // };
 
   return (
     <>
@@ -83,15 +83,15 @@ function Projects() {
                 <i className="bi bi-github"></i> Github
               </a>
 
-              <button
+              {/* <button
                 className="btnSecondary"
                 aria-label="opens a window on this page that contains more information about this project"
                 onClick={() => modalOpen(index)}
               >
                 <i className="bi bi-file-earmark-code-fill"></i> More Detials
-              </button>
+              </button> */}
             </div>
-
+{/* 
             <Modal
               isOpen={isModalOpen[index]}
               onRequestClose={() => modalClose(index)}
@@ -108,7 +108,7 @@ function Projects() {
               
 
               <button onClick={() => modalClose(index)}>Close</button>
-            </Modal>
+            </Modal> */}
 
           </article>
         ))}
