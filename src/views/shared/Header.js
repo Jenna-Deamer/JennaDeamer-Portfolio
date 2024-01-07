@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark shadow">
+    <nav className="navbar navbar-expand-lg shadow">
       <Link to="/" className="navbar-brand mx-4" id="home" title="Go to Homepage">
         <img
           src="/images/logo.png"

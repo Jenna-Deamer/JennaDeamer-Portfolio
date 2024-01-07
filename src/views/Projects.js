@@ -16,7 +16,7 @@ function Projects() {
     },
     {
       title: "Figma to Website",
-      imgUrl: "/images/thumbnails/bookAppThumbnail.webp",
+      imgUrl: "/images/thumbnails/WaterTreatmentThumbnail.webp",
       imgAlt: "Figma to Website Thumbnail",
       description: "Transformed Figma Design into a Static Company Website.",
       skillText: "HTML | CSS | Bootstrap",
