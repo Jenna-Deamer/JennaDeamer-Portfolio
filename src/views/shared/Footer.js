@@ -31,7 +31,7 @@ function Footer() {
       </div>
 
       <div className="text-center p-2" id="copyrightFooter">
-        <small>&copy;2024 Jenna Deamer | Logo by Name Here </small>
+        <small>&copy;2024 Jenna Deamer | Logo by Sophia </small>
       </div>
     </footer>
   );

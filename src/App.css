@@ -33,9 +33,12 @@
     } 
 }
 
+* {
+    box-sizing: border-box;
+}
 /* Main container */
 main {
-    min-height: calc(100vh - 86px - 86px);
+    min-height: calc(100vh - 90px - 86px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,6 +53,16 @@ main {
 
 nav {
     background-color: var(--primary-color);
+}
+nav img{
+    border: 2px solid transparent;
+   
+}
+nav img:hover{
+    border: 2px solid var(--text-color);
+    border-radius: 100em;
+    transition: ease-in-out .4s;
+    transform: scale(1.1);
 }
 
 h1,
@@ -265,7 +278,6 @@ textarea {
 footer {
     background-color: var(--primary-color);
     color: var(--text-color);
-    font-style: italic;
 }
 
 footer a {

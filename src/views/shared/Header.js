@@ -2,7 +2,7 @@
 function Header() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark shadow">
-      <a className="navbar-brand mx-4" href="/" id="home">
+      <a className="navbar-brand mx-4" href="/" id="home" title="Go to Homepage">
       <img
       src="/images/logo.png"
       alt="A orange circle with the white Initials JD"
