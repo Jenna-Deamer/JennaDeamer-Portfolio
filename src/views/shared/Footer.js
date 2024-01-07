@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="text-center">
+    <footer className="text-center fixed-bottom">
       <div id="footerLinksWrapper" className="p-2">
         <a
           href="https://www.linkedin.com/in/jenna-deamer-51b741251/"
