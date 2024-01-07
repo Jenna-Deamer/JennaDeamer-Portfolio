@@ -11,24 +11,20 @@ import Contact from "./views/Contact.js";
 
 function App() {
   return (
-    <>
-     
-      <Header />
-      <main> 
+    <div>
       <BrowserRouter>
-     
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/about" element={<About />}></Route>
-          <Route path="/projects" element={<Projects />}></Route>
-          <Route path="/contact" element={<Contact />}></Route>
-        </Routes>
-       
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/about" element={<About />}></Route>
+            <Route path="/projects" element={<Projects />}></Route>
+            <Route path="/contact" element={<Contact />}></Route>
+          </Routes>
+        </main>
+        <Footer />
       </BrowserRouter>
-      </main>
-      <Footer />
-   
-    </>
+    </div>
   );
 }
 

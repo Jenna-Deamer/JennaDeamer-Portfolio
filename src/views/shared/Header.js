@@ -1,14 +1,14 @@
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark shadow">
-      <a className="navbar-brand mx-4" href="/" id="home" title="Go to Homepage">
-      <img
-      src="/images/logo.png"
-      alt="A orange circle with the white Initials JD"
-    >
-      </img>
-      </a>
+      <Link to="/" className="navbar-brand mx-4" id="home" title="Go to Homepage">
+        <img
+          src="/images/logo.png"
+          alt="A orange circle with the white Initials JD"
+        />
+      </Link>
 
       <button
         className="navbar-toggler me-2"
@@ -24,25 +24,24 @@ function Header() {
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ms-3">
           <li className="nav-item">
-            <a className="nav-link" href="/about" id="about">
+            <Link to="/about" className="nav-link" id="about">
               About
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/projects" id="projects">
+            <Link to="/projects" className="nav-link" id="projects">
               Projects
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/contact" id="contact">
+            <Link to="/contact" className="nav-link" id="contact">
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
     </nav>
-
-  )
+  );
 }
 
 export default Header;

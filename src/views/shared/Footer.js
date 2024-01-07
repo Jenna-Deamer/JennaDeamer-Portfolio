@@ -5,16 +5,17 @@ function Footer() {
         <a
           href="https://www.linkedin.com/in/jenna-deamer-51b741251/"
           className="me-4 socialLinkBtn border-0"
-          target="_blank" rel="noopener noreferrer"
+          target="_blank"
+          rel="noopener noreferrer"
           aria-label="Visit Jenna Deamer's linkedin"
         >
           <i className="bi bi-linkedin"></i>
-
         </a>
         <a
           href="https://github.com/Jenna-Deamer"
           className="socialLinkBtn border-0 me-4"
-          target="_blank" rel="noopener noreferrer"
+          target="_blank"
+          rel="noopener noreferrer"
           aria-label="Visit Jenna Deamer's github"
         >
           <i className="bi bi-github"></i>
@@ -23,7 +24,8 @@ function Footer() {
         <a
           href="https://drive.google.com/file/d/1dP4kPuOhvp-tn2ijyywbBQbSjjvp0-J8/view?usp=sharing"
           className="socialLinkBtn border-0"
-          target="_blank" rel="noopener noreferrer"
+          target="_blank"
+          rel="noopener noreferrer"
           aria-label="Open Jenna Deamer's resume in a new tab as a PDF "
         >
           <i className="bi bi-file-earmark-text-fill"></i>
@@ -31,7 +33,15 @@ function Footer() {
       </div>
 
       <div className="text-center p-2" id="copyrightFooter">
-        <small>&copy;2024 Jenna Deamer | Logo by Sophia </small>
+        <small>
+          &copy;2024 Jenna Deamer | Logo by{" "}
+          <a href="https://linktr.ee/twii6armageddo6?utm_source=linktree_admin_share"
+          target="_blank" rel="noopener noreferrer"
+          aria-label="Open Sophia's Linktree page"
+        >
+            Sophia
+          </a>
+        </small>
       </div>
     </footer>
   );
