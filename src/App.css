@@ -52,6 +52,7 @@ main {
 nav {
     background-color: var(--primary-color);
 }
+
 .navbar-nav .nav-link{
     color: #AFBAC0; /*Bootstrap Default failed WCAG AAA. Updated to lighter */
 }
@@ -74,8 +75,7 @@ nav img:hover{
     border-radius: 100em;
     transition: ease-in-out .4s;
     transform: scale(1.1);
-}
-
+}  
 h1,
 h2,
 h3,
@@ -176,6 +176,7 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     animation: shake 0.4s ease-in-out;
     animation-iteration-count: 1;
 }
+
 @media screen and (max-width: 577px){
     .skillsContainer {
         padding: 10px;
@@ -238,7 +239,7 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         padding: 20px;
     }
     .projectCard p {
-        height: 4rem;
+        height: 5rem;
     
     }
 }
@@ -252,7 +253,7 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
     .projectCard p {
-        height: 58px;
+        height: 80px;
     }
 
     /*Add space between header & the content above it*/
@@ -277,7 +278,11 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         margin-bottom: 1em;
     }
 }
-
+@media  screen and (max-width:400px) {
+    .projectCard p{
+       
+    }
+}
 /*CONTACT*/
 /* #formHeader{
     color: var(--black);

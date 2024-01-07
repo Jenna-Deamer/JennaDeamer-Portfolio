@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <nav className="navbar navbar-expand-lg shadow">
+    <nav className="navbar navbar-expand-lg shadow navbar-dark">
       <Link to="/" className="navbar-brand mx-4" id="home" title="Go to Homepage">
         <img
           src="/images/logo.png"
@@ -19,7 +19,8 @@ function Header() {
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span className="navbar-toggler-icon"></span>
+    <span className="navbar-toggler-icon custom-toggler-icon"></span>
+
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ms-3">

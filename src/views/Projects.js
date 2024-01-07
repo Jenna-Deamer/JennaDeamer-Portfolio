@@ -18,7 +18,7 @@ function Projects() {
       title: "Figma to Website",
       imgUrl: "/images/thumbnails/WaterTreatmentThumbnail.webp",
       imgAlt: "Figma to Website Thumbnail",
-      description: "Transformed Figma Design into a Static Company Website.",
+      description: "Converted a Figma-designed water treatment services layout into a responsive static website.",
       skillText: "HTML | CSS | Bootstrap",
       githubUrl: "https://github.com/Jenna-Deamer/COMP1051-FinalProject",
       demoUrl: "https://comp1051-finalproject.netlify.app/",
