@@ -37,7 +37,7 @@
 }
 /* Main container */
 main {
-    min-height: calc(100vh - 90px - 86px);
+    min-height: calc(100vh - 90px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -185,7 +185,7 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 @media screen and (max-width: 770px) {
 
     #aboutContainer img {
-        margin-top: 1em;
+      margin-bottom: 1em;
     }
    
 }
@@ -198,7 +198,6 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /*PROJECTS PAGE*/
-
 
 /*ProjectCard Hover Animation*/
 .projectCard a.hovered img {
@@ -279,10 +278,6 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 }
 
-/*CONTACT*/
-/* #formHeader{
-    color: var(--black);
-} */
 textarea {
     max-height: 200px;
 }
@@ -291,6 +286,7 @@ textarea {
 footer {
     background-color: var(--primary-color);
     color: var(--text-color);
+    
 }
 
 footer .socialLinkBtn {

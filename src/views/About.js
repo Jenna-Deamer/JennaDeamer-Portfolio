@@ -1,44 +1,44 @@
 function About() {
   return (
     <>
-<section className="container pageContainer" id="aboutContainer">
-  <div className="row">
-    <figure className="col-md-6 order-md-2 order-sm-1 text-center">
-      <img
-        src="/images/profile.webp"
-        alt="Jenna Deamer - Frontend Developer"
-        id="aboutImage"
-      />
-    </figure>
-    <div className="col-md-6 order-md-1 order-sm-2" id="descriptionWrapper">
-      <h1>Hi, I'm Jenna Deamer,</h1>
-      <p className="pt-2 pb-2 text-center">
-        A student in frontend development at Georgian College. I am
-        passionate about crafting responsive and user-friendly web applications.
-        I am proficient in responsive design principles and dedicated to
-        mobile-first development.
-      </p>
+      <section className="container pageContainer" id="aboutContainer">
+        <div className="row">
+          <figure className="col-md-6 order-md-2 order-sm-1 text-center">
+            <img
+              src="/images/profile.webp"
+              alt="Jenna Deamer - Frontend Developer"
+              id="aboutImage"
+            />
+          </figure>
+          <div
+            className="col-md-6 order-md-1 order-sm-2"
+            id="descriptionWrapper"
+          >
+            <h1>Hi, I'm Jenna Deamer,</h1>
+            <p className="pt-2 pb-2 text-center">
+              a student in frontend development at Georgian College. My passion
+              lies in crafting responsive and user-friendly web applications.
+              Proficient in responsive design principles, I focus on creating
+              dynamic digital experiences.
+            </p>
 
-      <div className="buttonsWrapper">
-        <a className="btnPrimary" href="/projects">
-          View Work
-        </a>
-        <a
-          className="btnSecondary"
-          href="https://drive.google.com/file/d/1dP4kPuOhvp-tn2ijyywbBQbSjjvp0-J8/view?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="bi bi-file-earmark-text-fill"></i> View Resume
-        </a>
-        {/**Opens a new tab. Target ensures the user knows a new tab opened. */}
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
+            <div className="buttonsWrapper">
+              <a className="btnPrimary" href="/projects">
+                View Work
+              </a>
+              <a
+                className="btnSecondary"
+                href="https://drive.google.com/file/d/1dP4kPuOhvp-tn2ijyywbBQbSjjvp0-J8/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="bi bi-file-earmark-text-fill"></i> View Resume
+              </a>
+              {/**Opens a new tab. Target ensures the user knows a new tab opened. */}
+            </div>
+          </div>
+        </div>
+      </section>
 
       <h2 className="text-center pb-2 pt-2">My Skills</h2>
 
