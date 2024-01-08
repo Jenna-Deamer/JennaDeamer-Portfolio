@@ -1,5 +1,6 @@
 /* APP.CSS */
 @import url('https://fonts.googleapis.com/css2?family=Khula&family=Roboto&display=swap');
+
 :root {
     --primary-color: #0B2B40;
     --text-color: #F5F5F5;
@@ -9,35 +10,43 @@
     --action-color-hover: #ff9e4f;
     --action-active-color: #ff7e00;
 }
-/*Animations*/
-@keyframes shake{
-    0% { 
-        transform: rotate(5deg); 
-    } 
-    
-    20% { 
-        transform: rotate(-8deg); 
-    } 
-    30%{
-      transform: rotate(-16deg);
-    }
-    60%{
-      transform: rotate(8deg)
-    }
-    50%{
-      transform: rotate(16deg);
-    }
-    100% { 
-        transform: rotate(-5deg); 
-    } 
-}
 
+/*Animations*/
+@keyframes shake {
+    0% {
+        transform: rotate(5deg);
+    }
+
+    20% {
+        transform: rotate(-8deg);
+    }
+
+    30% {
+        transform: rotate(-16deg);
+    }
+
+    60% {
+        transform: rotate(8deg)
+    }
+
+    50% {
+        transform: rotate(16deg);
+    }
+
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+ 
 * {
     box-sizing: border-box;
 }
+
 /* Main container */
 main {
-    min-height: calc(100vh - 90px);
+    min-height: calc(100vh - 90px - 90px);
+    overflow-y: auto;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,33 +58,39 @@ main {
     color: var(--text-color);
     background-image: linear-gradient(52deg, rgba(163, 163, 163, 0.09) 0%, rgba(163, 163, 163, 0.09) 33.3%, rgba(100, 100, 100, 0.09) 33.3%, rgba(100, 100, 100, 0.09) 66.6%, rgba(162, 162, 162, 0.09) 66.6%, rgba(162, 162, 162, 0.09) 99%), linear-gradient(258deg, rgba(193, 193, 193, 0.06) 0%, rgba(193, 193, 193, 0.06) 33.3%, rgba(169, 169, 169, 0.06) 33.3%, rgba(169, 169, 169, 0.06) 66.6%, rgba(92, 92, 92, 0.06) 66.6%, rgba(92, 92, 92, 0.06) 99%), linear-gradient(129deg, rgba(45, 45, 45, 0.03) 0%, rgba(45, 45, 45, 0.03) 33.3%, rgba(223, 223, 223, 0.03) 33.3%, rgba(223, 223, 223, 0.03) 66.6%, rgba(173, 173, 173, 0.03) 66.6%, rgba(173, 173, 173, 0.03) 99%), linear-gradient(280deg, rgba(226, 226, 226, 0.06) 0%, rgba(226, 226, 226, 0.06) 33.3%, rgba(81, 81, 81, 0.06) 33.3%, rgba(81, 81, 81, 0.06) 66.6%, rgba(186, 186, 186, 0.06) 66.6%, rgba(186, 186, 186, 0.06) 99%), linear-gradient(85deg, rgba(225, 225, 225, 0.04) 0%, rgba(225, 225, 225, 0.04) 33.3%, rgba(95, 95, 95, 0.04) 33.3%, rgba(95, 95, 95, 0.04) 66.6%, rgba(39, 39, 39, 0.04) 66.6%, rgba(39, 39, 39, 0.04) 99%), linear-gradient(128deg, rgba(184, 184, 184, 0.06) 0%, rgba(184, 184, 184, 0.06) 33.3%, rgba(0, 0, 0, 0.06) 33.3%, rgba(0, 0, 0, 0.06) 66.6%, rgba(140, 140, 140, 0.06) 66.6%, rgba(140, 140, 140, 0.06) 99.89999999999999%), linear-gradient(323deg, rgba(40, 40, 40, 0.07) 0%, rgba(40, 40, 40, 0.07) 33.3%, rgba(214, 214, 214, 0.07) 33.3%, rgba(214, 214, 214, 0.07) 66.6%, rgba(190, 190, 190, 0.07) 66.6%, rgba(190, 190, 190, 0.07) 99.89999999999999%), linear-gradient(61deg, rgba(230, 230, 230, 0) 0%, rgba(230, 230, 230, 0) 33.3%, rgba(241, 241, 241, 0) 33.3%, rgba(241, 241, 241, 0) 66.6%, rgba(55, 55, 55, 0) 66.6%, rgba(55, 55, 55, 0) 99%), linear-gradient(0deg, #2625e3, #0bbaef);
 }
+
 nav {
     background-color: var(--primary-color);
 }
 
-.navbar-nav .nav-link{
-    color: #AFBAC0; /*Bootstrap Default failed WCAG AAA. Updated to lighter */
+.navbar-nav .nav-link {
+    color: #AFBAC0;
+    /*Bootstrap Default failed WCAG AAA. Updated to lighter */
 }
-.navbar-nav .nav-link:hover{
+
+.navbar-nav .nav-link:hover {
     color: var(--action-color-hover);
     transition: ease-in-out .3s;
 }
+
 .navbar-nav .nav-link:active,
-.navbar-nav .nav-link:focus{
+.navbar-nav .nav-link:focus {
     color: var(--action-active-color);
- 
+
 }
 
-nav img{
+nav img {
     border: 2px solid transparent;
-   
+
 }
-nav img:hover{
+
+nav img:hover {
     border: 2px solid var(--text-color);
     border-radius: 100em;
     transition: ease-in-out .4s;
     transform: scale(1.1);
-}  
+}
+
 h1,
 h2,
 h3,
@@ -84,15 +99,19 @@ h4 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
 }
-#heroHeader{
+
+#heroHeader {
     font-weight: 600;
 }
+
 p {
     font-size: 18px;
-    
+
 }
-p,small{
-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+p,
+small {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /*BUTTONS*/
@@ -172,29 +191,31 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     max-width: 100px;
     margin: 16px;
 }
-.skillsContainer svg:hover{
+
+.skillsContainer svg:hover {
     animation: shake 0.4s ease-in-out;
     animation-iteration-count: 1;
 }
 
-@media screen and (max-width: 577px){
+@media screen and (max-width: 577px) {
     .skillsContainer {
         padding: 10px;
     }
 }
+
 @media screen and (max-width: 770px) {
 
     #aboutContainer img {
-      margin-bottom: 1em;
+        margin-bottom: 1em;
     }
-   
+
 }
 
 @media screen and (max-width: 990px) {
     #aboutContainer img {
         height: 260px;
     }
-  
+
 }
 
 /*PROJECTS PAGE*/
@@ -230,16 +251,19 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (max-width: 1300px) {
+
     /*Space between the edge of the screen & thumbnails*/
     .projectCard img,
     p,
     small,
-    h2, .buttonsWrapper {
+    h2,
+    .buttonsWrapper {
         padding: 20px;
     }
+
     .projectCard p {
         height: 5rem;
-    
+
     }
 }
 
@@ -286,14 +310,18 @@ textarea {
 footer {
     background-color: var(--primary-color);
     color: var(--text-color);
-    
+    height: 90px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 footer .socialLinkBtn {
     font-size: 20px;
     color: var(--text-color);
 }
-footer a{
+
+footer a {
     color: var(--text-color);
 }
 
