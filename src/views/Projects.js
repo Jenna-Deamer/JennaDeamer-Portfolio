@@ -47,7 +47,7 @@ function Projects() {
 
   return (
     <>
-      <section className="pageContainer row" id="projectsContainer">
+      <section className="container pageContainer row" id="projectsContainer">
         {projectCards.map((card, index) => (
           <article key={index} className="col-lg-6 projectCard">
             <h2>{card.title}</h2>

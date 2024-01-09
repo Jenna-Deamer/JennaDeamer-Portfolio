@@ -22,11 +22,12 @@ function Footer() {
         </a>
 
         <a
-          href="https://drive.google.com/file/d/1dP4kPuOhvp-tn2ijyywbBQbSjjvp0-J8/view?usp=sharing"
+          href="https://a4fhjldpt1w2fedr.public.blob.vercel-storage.com/Resume.pdf"
           className="socialLinkBtn border-0"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Open Jenna Deamer's resume in a new tab as a PDF "
+          aria-label="Open Jenna Deamer's resume in a new tab as a PDF & download"
+         
         >
           <i className="bi bi-file-earmark-text-fill"></i>
         </a>

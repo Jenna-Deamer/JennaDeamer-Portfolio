@@ -16,10 +16,12 @@ function About() {
           >
             <h1>Hi, I'm Jenna Deamer,</h1>
             <p className="pt-2 pb-2 text-center">
-              a student in frontend development at Georgian College. My passion
-              lies in crafting responsive and user-friendly web applications.
-              Proficient in responsive design principles, I focus on creating
-              dynamic digital experiences.
+              I am studying Interactive Media Design at Georgian College. I am
+              Proficient in foundational languages like HTML, CSS, and
+              JavaScript, I specialize in crafting robust web applications.
+              Leveraging tools such as Bootstrap for efficient styling and
+              design, along with React for dynamic user interfaces, I aim to
+              build immersive digital experiences across various platforms.
             </p>
 
             <div className="buttonsWrapper">
@@ -28,7 +30,7 @@ function About() {
               </a>
               <a
                 className="btnSecondary"
-                href="https://drive.google.com/file/d/1dP4kPuOhvp-tn2ijyywbBQbSjjvp0-J8/view?usp=sharing"
+                href="https://a4fhjldpt1w2fedr.public.blob.vercel-storage.com/Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
