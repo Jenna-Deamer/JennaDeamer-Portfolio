@@ -5,7 +5,7 @@ Modal.setAppElement("#root"); //Accessibility
 function Projects() {
   const projectCards = [
     {
-      title: "Book List",
+      title: "Book Management App",
       imgUrl: "/images/thumbnails/bookAppThumbnail.webp",
       imgAlt: "Book App Thumbnail",
       description:
@@ -15,7 +15,7 @@ function Projects() {
       demoUrl: "https://comp-2112-assignment2.vercel.app/",
     },
     {
-      title: "Figma to Website",
+      title: "Figma File to Website",
       imgUrl: "/images/thumbnails/WaterTreatmentThumbnail.webp",
       imgAlt: "Figma to Website Thumbnail",
       description: "Converted a Figma-designed water treatment services layout into a responsive static website.",
