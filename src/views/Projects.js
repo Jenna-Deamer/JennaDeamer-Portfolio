@@ -23,6 +23,7 @@ function Projects() {
       githubUrl: "https://github.com/Jenna-Deamer/COMP1051-FinalProject",
       demoUrl: "https://comp1051-finalproject.netlify.app/",
     },
+    
   ];
 
   //Mange hoverState for each card independently by using an array.

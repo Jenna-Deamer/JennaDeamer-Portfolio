@@ -1,5 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+//Vercel insights import
+import { SpeedInsights } from '@vercel/speed-insights/react';
 //shared views
 import Header from "./views/shared/Header.js";
 import Footer from "./views/shared/Footer.js";
@@ -8,6 +10,7 @@ import Home from "./views/Home.js";
 import About from "./views/About.js";
 import Projects from "./views/Projects.js";
 import Contact from "./views/Contact.js";
+
 
 function App() {
   return (
@@ -21,6 +24,7 @@ function App() {
             <Route path="/projects" element={<Projects />}></Route>
             <Route path="/contact" element={<Contact />}></Route>
           </Routes>
+          <SpeedInsights />
         </main>
         <Footer />
       </BrowserRouter>
