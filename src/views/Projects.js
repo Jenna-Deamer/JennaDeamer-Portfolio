@@ -23,7 +23,7 @@ function Projects() {
       githubUrl: "https://github.com/Jenna-Deamer/COMP1051-FinalProject",
       demoUrl: "https://comp1051-finalproject.netlify.app/",
     },
-    
+
   ];
 
   //Mange hoverState for each card independently by using an array.
@@ -48,7 +48,7 @@ function Projects() {
 
   return (
     <>
-      <section className="container pageContainer row" id="projectsContainer">
+      <section className="container pageContainer row mb-4" id="projectsContainer">
         {projectCards.map((card, index) => (
           <article key={index} className="col-lg-6 projectCard">
             <h2>{card.title}</h2>
@@ -92,7 +92,7 @@ function Projects() {
                 <i className="bi bi-file-earmark-code-fill"></i> More Detials
               </button> */}
             </div>
-{/* 
+            {/* 
             <Modal
               isOpen={isModalOpen[index]}
               onRequestClose={() => modalClose(index)}
