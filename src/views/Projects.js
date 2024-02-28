@@ -15,7 +15,16 @@ function Projects() {
       demoUrl: "https://comp-2112-assignment2.vercel.app/",
     },
     {
-      title: "Figma File to Website",
+      title: "Automoblox Redesign",
+      imgUrl: "/images/thumbnails/AutomobloxThumbnail.webp",
+      imgAlt: "Automoblox Redesign Thumbnail",
+      description: "Transformed the classic Automoblox website with improved user experience and modern design.",
+      skillText: "HTML | CSS | Javascript | Bootstrap",
+      githubUrl: "https://github.com/Jenna-Deamer/Automoblox-Redesign",
+      demoUrl: "https://automoblox-comp2081.netlify.app/",
+    },
+    {
+      title: "Figma File to Static Site",
       imgUrl: "/images/thumbnails/WaterTreatmentThumbnail.webp",
       imgAlt: "Figma to Website Thumbnail",
       description: "Converted a Figma-designed water treatment services layout into a responsive static website.",
