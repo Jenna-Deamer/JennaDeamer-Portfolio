@@ -226,36 +226,10 @@ small {
 }
 
 /*PROJECTS PAGE*/
-.projectCard {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-/*ProjectCard Hover Animation*/
-.projectCard a.hovered img {
-    opacity: .8;
-    transform: scale(1.05);
-    transition: 0.3s ease-in;
-}
-
-/*Text styles & positioning on hover*/
-.projectCard a {
-    position: relative;
-}
-
-.linkText {
-    position: absolute;
-    background-color: var(--action-color);
-    color: var(--text-color);
-    padding: 10px;
-    border-radius: 5px;
-    /* Position it relative to the container */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.projectButton{
+    margin-top: 1em;
+    margin-right: 1em;
+    width: 200px;
 }
 
 /*Center Stack layout at bootstrap grid breakpoints*/

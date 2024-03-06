@@ -44,85 +44,30 @@ function Projects() {
   const handleMouseLeave = (index) => {
     setHoverStates({ hoverStates, [index]: false });
   };
-  //track modal open & close state
-  // const [isModalOpen, setIsModalOpen] = useState({});
-  // const modalOpen = (index) => {
-  //   setIsModalOpen({ isModalOpen, [index]: true });
-  //   document.body.style.overflow = "hidden"; // Prevent scrolling on open modal
-  // };
-  // const modalClose = (index) => {
-  //   setIsModalOpen({ isModalOpen, [index]: false });
-  //   document.body.style.overflow = "auto"; // Enable scrolling on modal close
-  // };
+ 
 
   return (
     <>
-      <section className="container pageContainer row mb-4" id="projectsContainer">
-        {projectCards.map((card, index) => (
-          <article key={index} className="col-lg-6 projectCard">
-            <h2>{card.title}</h2>
-            <a
-              href={card.demoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              onMouseEnter={() => handleMouseEnter(index)}
-              onMouseLeave={() => handleMouseLeave(index)}
-              className={hoverStates[index] ? "hovered" : ""}
-            >
-              {/** When hoverState is true for a card, Apply hovered CSS class.
-               * Updates to false when the mouseLeaves, removing the CSS class */}
-              <img
-                src={card.imgUrl}
-                alt={card.imgAlt}
-                className="pb-2 img-fluid"
-              />
-              {hoverStates[index] && (
-                <span className="linkText">Click to view live demo</span>
-              )}
-            </a>
-            <p>{card.description}</p>
-            <small>{card.skillText}</small>
-            <div className="buttonsWrapper pt-2">
-              <a
-                href={card.githubUrl}
-                className="btnPrimary"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Visit the github repository"
-              >
-                <i className="bi bi-github"></i> Github
-              </a>
+     <section className="container mb-4" id="projectsContainer">
+  {projectCards.map((card, index) => (
+    //check if index is even or odd, if even pay default, if odd flex-row-reverse bs class
+    <article key={index} className={`projectCard mb-4 row ${index % 2 === 0 ? '' : 'flex-row-reverse'}`}>
+      <h2 className="text-center mb-4 mt-4">{card.title}</h2>
+      <section className="col-lg-6">
+        <img src={card.imgUrl} alt={card.imgAlt} className="pb-2 img-fluid" />
+      </section>
 
-              {/* <button
-                className="btnSecondary"
-                aria-label="opens a window on this page that contains more information about this project"
-                onClick={() => modalOpen(index)}
-              >
-                <i className="bi bi-file-earmark-code-fill"></i> More Detials
-              </button> */}
-            </div>
-            {/* 
-            <Modal
-              isOpen={isModalOpen[index]}
-              onRequestClose={() => modalClose(index)}
-              style={{
-                overlay: {
-
-                },
-                content: {
-                  margin: 'auto',
-                },
-              }}
-            >
-              <h2 className="text-center">{card.title}</h2>
-              
-
-              <button onClick={() => modalClose(index)}>Close</button>
-            </Modal> */}
-
-          </article>
-        ))}
-      </section >
+      <section className="col-lg-6">
+        <p>{card.description}</p>
+        <small>{card.skillText}</small>
+        <div className="buttonsWrapperpt-2">
+          <button className="btnPrimary projectButton">Github</button>
+          <button className="btnSecondary projectButton">Demo</button>
+        </div>
+      </section>
+    </article>
+  ))}
+</section>
     </>
   );
 }
