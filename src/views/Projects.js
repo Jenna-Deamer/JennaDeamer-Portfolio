@@ -23,15 +23,7 @@ function Projects() {
       githubUrl: "https://github.com/Jenna-Deamer/Automoblox-Redesign",
       demoUrl: "https://automoblox-comp2081.netlify.app/",
     },
-    {
-      title: "Figma File to Static Site",
-      imgUrl: "/images/thumbnails/WaterTreatmentThumbnail.webp",
-      imgAlt: "Figma to Website Thumbnail",
-      description: "Converted a Figma-designed water treatment services layout into a responsive static website.",
-      skillText: "HTML | CSS | Bootstrap",
-      githubUrl: "https://github.com/Jenna-Deamer/COMP1051-FinalProject",
-      demoUrl: "https://comp1051-finalproject.netlify.app/",
-    },
+  
 
   ];
 
