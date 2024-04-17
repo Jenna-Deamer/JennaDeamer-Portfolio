@@ -36,10 +36,12 @@ function Projects() {
     <>
       <section className="container mb-4" id="projectsContainer">
         {projectCards.map((card, index) => (
-          <article key={index} className="projectCard">
-              <h2 className="projectTitle">{card.title}</h2>
+          //Dynamically add class even or odd based on remainder of index.
+          //if remainder is 0 it is true and gets the even class.
+          // If not 0. it results false giving item odd class
+          <article key={index} className={`projectCard ${index % 2 === 0 ? 'even' : 'odd'}`}>
+            <h2 className="projectTitle">{card.title}</h2>
             <div className="ProjectImageSide">
-    
               <img
                 src={card.imgUrl}
                 alt={card.imgAlt}
@@ -66,13 +68,10 @@ function Projects() {
                 </a>
               </div>
             </div>
-
             <div className="projectDescSide">
-            <p>{card.description}</p>
-            <small>{card.skillText}</small>
+              <p>{card.description}</p>
+              <small>{card.skillText}</small>
             </div>
-
-           
           </article>
         ))}
       </section>

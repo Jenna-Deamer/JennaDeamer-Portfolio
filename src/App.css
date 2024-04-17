@@ -229,7 +229,7 @@ small {
 .projectCard {
     display: grid;
     grid-template-columns: 1fr 1fr; 
-    gap: 20px; 
+    gap: 25px; 
     margin-bottom: 2em;
   }
   
@@ -237,21 +237,26 @@ small {
     grid-column: span 2;
     text-align: center;
   }
+
+ 
+  /* Apply styles for odd rows */
+  .projectCard.odd > .ProjectImageSide {
+    grid-column: 2;
+    grid-row: 2;
+  }
   
+  .projectCard.odd > .projectDescSide {
+    grid-column: 1;
+    grid-row: 2;
+  }
   
   .projectCard > .ProjectImageSide > .buttonsWrapper {
     /* Center buttons under project image */
     display: flex;
     justify-content: center;
   }
-    
-  .projectCard:nth-child(even) .ProjectImageSide {
-    grid-column: 2; /* Move ProjectImageSide to the second column for even-numbered cards */
-  }
   
-  .projectCard:nth-child(even) .projectDescSide {
-    grid-column: 1; /* Move projectDescSide to the first column for even-numbered cards */
-  }
+ 
   
 
 /*Center Stack layout at bootstrap grid breakpoints*/
