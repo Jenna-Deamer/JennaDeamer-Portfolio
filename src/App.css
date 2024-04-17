@@ -3,7 +3,8 @@
 
 :root {
     --primary-color: #0B2B40;
-    --text-color: #F5F5F5;
+    --light-blue: #2625e3;
+    --white: #F5F5F5;
     --black: #0A0A0A;
 
     --action-color: #e07c1f;
@@ -55,7 +56,7 @@ main {
     /*Padding equal to footer height*/
     padding-bottom: 86px;
     padding-top: 86px;
-    color: var(--text-color);
+    color: var(--white);
     background-image: linear-gradient(52deg, rgba(163, 163, 163, 0.09) 0%, rgba(163, 163, 163, 0.09) 33.3%, rgba(100, 100, 100, 0.09) 33.3%, rgba(100, 100, 100, 0.09) 66.6%, rgba(162, 162, 162, 0.09) 66.6%, rgba(162, 162, 162, 0.09) 99%), linear-gradient(258deg, rgba(193, 193, 193, 0.06) 0%, rgba(193, 193, 193, 0.06) 33.3%, rgba(169, 169, 169, 0.06) 33.3%, rgba(169, 169, 169, 0.06) 66.6%, rgba(92, 92, 92, 0.06) 66.6%, rgba(92, 92, 92, 0.06) 99%), linear-gradient(129deg, rgba(45, 45, 45, 0.03) 0%, rgba(45, 45, 45, 0.03) 33.3%, rgba(223, 223, 223, 0.03) 33.3%, rgba(223, 223, 223, 0.03) 66.6%, rgba(173, 173, 173, 0.03) 66.6%, rgba(173, 173, 173, 0.03) 99%), linear-gradient(280deg, rgba(226, 226, 226, 0.06) 0%, rgba(226, 226, 226, 0.06) 33.3%, rgba(81, 81, 81, 0.06) 33.3%, rgba(81, 81, 81, 0.06) 66.6%, rgba(186, 186, 186, 0.06) 66.6%, rgba(186, 186, 186, 0.06) 99%), linear-gradient(85deg, rgba(225, 225, 225, 0.04) 0%, rgba(225, 225, 225, 0.04) 33.3%, rgba(95, 95, 95, 0.04) 33.3%, rgba(95, 95, 95, 0.04) 66.6%, rgba(39, 39, 39, 0.04) 66.6%, rgba(39, 39, 39, 0.04) 99%), linear-gradient(128deg, rgba(184, 184, 184, 0.06) 0%, rgba(184, 184, 184, 0.06) 33.3%, rgba(0, 0, 0, 0.06) 33.3%, rgba(0, 0, 0, 0.06) 66.6%, rgba(140, 140, 140, 0.06) 66.6%, rgba(140, 140, 140, 0.06) 99.89999999999999%), linear-gradient(323deg, rgba(40, 40, 40, 0.07) 0%, rgba(40, 40, 40, 0.07) 33.3%, rgba(214, 214, 214, 0.07) 33.3%, rgba(214, 214, 214, 0.07) 66.6%, rgba(190, 190, 190, 0.07) 66.6%, rgba(190, 190, 190, 0.07) 99.89999999999999%), linear-gradient(61deg, rgba(230, 230, 230, 0) 0%, rgba(230, 230, 230, 0) 33.3%, rgba(241, 241, 241, 0) 33.3%, rgba(241, 241, 241, 0) 66.6%, rgba(55, 55, 55, 0) 66.6%, rgba(55, 55, 55, 0) 99%), linear-gradient(0deg, #2625e3, #0bbaef);
 }
 
@@ -85,7 +86,7 @@ nav img {
 }
 
 nav img:hover {
-    border: 2px solid var(--text-color);
+    border: 2px solid var(--white);
     border-radius: 100em;
     transition: ease-in-out .4s;
     transform: scale(1.1);
@@ -124,14 +125,17 @@ small {
 /*BUTTONS*/
 .btnPrimary,
 .btnSecondary {
-    color: var(--text-color);
+    color: var(--white);
+    border: 2px solid var(--action-color);
     font-weight: 600;
     text-decoration: none;
     vertical-align: middle;
     padding: .5em 1em;
     border-radius: 8px;
-    border: 2px solid var(--action-color);
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease-in-out;
+    min-width: 150px;
+    text-align: center;
+    cursor: pointer;
 }
 
 .btnPrimary {
@@ -226,61 +230,103 @@ small {
 }
 
 /*PROJECTS PAGE*/
+
+/*Layout*/
 .projectCard {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 25px; 
-    margin-bottom: 2em;
-  }
-  
-  .projectTitle {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 4em;
+}
+
+.projectTitle {
     grid-column: span 2;
     text-align: center;
-  }
+}
 
- 
-  /* Apply styles for odd rows */
-  .projectCard.odd > .ProjectImageSide {
+
+/* Apply styles for odd rows */
+.projectCard.odd>.ProjectImageSide {
     grid-column: 2;
     grid-row: 2;
-  }
-  
-  .projectCard.odd > .projectDescSide {
+}
+
+.projectCard.odd>.projectDescSide {
     grid-column: 1;
     grid-row: 2;
-  }
-  
-  .projectCard > .ProjectImageSide > .buttonsWrapper {
+}
+
+.projectCard>.ProjectImageSide>.buttonsWrapper {
     /* Center buttons under project image */
     display: flex;
     justify-content: center;
-  }
-  
+}
+
+/*Content Styles*/
+.projectDescSide {
+    background-color: var(--primary-color);
+    border-radius: 1em;
+    /*Center content middle*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.projectDescription {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
  
-  
+    border-radius: 16px;
+}
 
-/*Center Stack layout at bootstrap grid breakpoints*/
-/* @media screen and (max-width: 992px) { */
+.projectSkillsContainer {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
 
-    /*Add space between header & the content above it*/
-    /* .projectCard h2 {
-        margin-top: 16px;
-    } */
+.projectSkillsList {
+    background-color: var(--light-blue);
+    padding: 4px 8px;
+    border-radius: 8px;
+    min-width: 80px;
+    text-align: center;
+    margin-top: 10px;
+}
 
-    /* Space between buttons & footer*/
-    /* .projectCard:last-of-type {
-        margin-bottom: 2em;
+.projectSkillsList:not(:last-of-type) {
+    margin-right: 10px;
+}
+
+
+/*Grid Smaller Screen Styles*/
+
+@media (max-width: 1200px) {
+    .projectCard {
+      grid-template-columns: 1fr;
+      /*Center content*/
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
-} */
-/* 
-textarea {
-    max-height: 200px;
-} */
+  
+    .projectDescSide {
+      grid-column: 1; 
+    }
+  }
 
 /*FOOTER*/
 footer {
     background-color: var(--primary-color);
-    color: var(--text-color);
+    color: var(--white);
     height: 90px;
     position: fixed;
     bottom: 0;
@@ -289,11 +335,11 @@ footer {
 
 footer .socialLinkBtn {
     font-size: 20px;
-    color: var(--text-color);
+    color: var(--white);
 }
 
 footer a {
-    color: var(--text-color);
+    color: var(--white);
     text-decoration: none;
 }
 
