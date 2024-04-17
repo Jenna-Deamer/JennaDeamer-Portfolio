@@ -227,54 +227,50 @@ small {
 
 /*PROJECTS PAGE*/
 .projectCard {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    margin-bottom: 2em;
+  }
+  
+  .projectTitle {
+    grid-column: span 2;
     text-align: center;
-}
-
-/*ProjectCard Hover Animation*/
-.projectCard a.hovered img {
-    opacity: .8;
-    transform: scale(1.05);
-    transition: 0.3s ease-in;
-}
-
-/*Text styles & positioning on hover*/
-.projectCard a {
-    position: relative;
-}
-
-.linkText {
-    position: absolute;
-    background-color: var(--action-color);
-    color: var(--text-color);
-    padding: 10px;
-    border-radius: 5px;
-    /* Position it relative to the container */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+  }
+  
+  
+  .projectCard > .ProjectImageSide > .buttonsWrapper {
+    /* Center buttons under project image */
+    display: flex;
+    justify-content: center;
+  }
+    
+  .projectCard:nth-child(even) .ProjectImageSide {
+    grid-column: 2; /* Move ProjectImageSide to the second column for even-numbered cards */
+  }
+  
+  .projectCard:nth-child(even) .projectDescSide {
+    grid-column: 1; /* Move projectDescSide to the first column for even-numbered cards */
+  }
+  
 
 /*Center Stack layout at bootstrap grid breakpoints*/
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) { */
 
     /*Add space between header & the content above it*/
-    .projectCard h2 {
+    /* .projectCard h2 {
         margin-top: 16px;
-    }
+    } */
 
     /* Space between buttons & footer*/
-    .projectCard:last-of-type {
+    /* .projectCard:last-of-type {
         margin-bottom: 2em;
     }
-}
-
+} */
+/* 
 textarea {
     max-height: 200px;
-}
+} */
 
 /*FOOTER*/
 footer {
