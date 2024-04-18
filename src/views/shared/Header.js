@@ -25,11 +25,6 @@ function Header() {
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ms-3">
           <li className="nav-item">
-            <Link to="/about" className="nav-link" id="about">
-              About
-            </Link>
-          </li>
-          <li className="nav-item">
             <Link to="/projects" className="nav-link" id="projects">
               Projects
             </Link>
