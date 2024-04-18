@@ -1,4 +1,21 @@
 function Home() {
+  const skills = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Angular",
+    "Express",
+    "Node.js",
+    "MySQL",
+    "MS SQL",
+    "MongoDB",
+    "PHP",
+    "WordPress",
+    "Bootstrap",
+    "Sass"
+  ];
   return (
     <>
       <section className="container pageContainer">
@@ -42,8 +59,13 @@ function Home() {
         </div>
       </section>
 
-      <section className="pageContainer skillsContainer">
+      <section className="container skillsContainer">
         <h2>My Skills</h2>
+        <ul className="skillsListContainer">
+          {skills.map((skill,index) => (
+              <li key={index} className="skillsList">{skill}</li>
+          ))}
+        </ul>
       </section>
     </>
   );

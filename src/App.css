@@ -3,7 +3,7 @@
 
 :root {
     --primary-color: #0B2B40;
-    --light-blue: #2625e3;
+    --blue: #004267;
     --white: #F5F5F5;
     --black: #0A0A0A;
 
@@ -173,8 +173,28 @@ small {
 }
 /*Skills*/
 .skillsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 4em;
     margin-top: 4em;
+}
+.skillsContainer ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.skillsContainer ul li:not(:last-of-type){
+    margin-right: 1em;
+}
+.skillsContainer ul li{
+    background-color: var(--blue);
+    padding: 4px 8px;
+    border-radius: 8px;
+    min-width: 100px;
+    text-align: center;
+    margin-top: 10px;
 }
 /*About*/
 #descriptionWrapper {
@@ -185,7 +205,7 @@ small {
 }
 .homeImage{
     border-radius: 16px;
-    box-shadow: 16px 16px 4px 0 var(--primary-color);
+    box-shadow: 8px 8px 8px 0 var(--primary-color);
 }
 
 /*Mobile Home*/
@@ -256,10 +276,10 @@ small {
 }
 
 .projectSkillsList {
-    background-color: var(--light-blue);
+    background-color: var(--blue);
     padding: 4px 8px;
     border-radius: 8px;
-    min-width: 80px;
+    min-width: 100px;
     text-align: center;
     margin-top: 10px;
 }
