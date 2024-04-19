@@ -9,12 +9,11 @@ function Home() {
     "Express",
     "Node.js",
     "MySQL",
-    "MS SQL",
     "MongoDB",
     "PHP",
     "WordPress",
     "Bootstrap",
-    "Sass"
+    "Sass",
   ];
   return (
     <>
@@ -60,7 +59,7 @@ function Home() {
       </section>
 
       <section className="container skillsContainer">
-        <h2>My Skills</h2>
+        <h2 className="text-center">My Skills</h2>
         <ul className="skillsListContainer">
           {skills.map((skill,index) => (
               <li key={index} className="skillsList">{skill}</li>
