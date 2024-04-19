@@ -267,15 +267,14 @@ small {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-
 }
 
 .projectDescription {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1em;
 
+    padding: 2em 1em;
     border-radius: 16px;
 }
 .projectImageSide img{
