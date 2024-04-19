@@ -6,11 +6,22 @@ function Projects() {
       imgAlt: "Smart Beach Thumbnail",
       description:
         "Smart Beach was a group project dedicated to enhancing safety at Station Beach in Kincardine, Ontario. Leveraging machine learning models and APIs developed by students specializing in Machine Learning and Big Data at Georgian College, our team crafted a predictive-based solution accessible through a user-friendly app interface. By integrating real-time data on water and weather conditions, our solution empowers beach visitors with critical insights for a safer, more enjoyable experience. ",
-      skillText: "Vite | React | CSS | Bootstrap | HTML",
       skillList: ["Vite", "React","CSS","Bootstrap","HTML"],
       // githubUrl: "https://github.com/C-Blouin/SmartBeach",
       demoUrl: "https://smartbeach.vercel.app/",
+
     },
+    {
+      title: "Simulated Woocommerce Site",
+      imgUrl: "/images/thumbnails/PixelPulseLearningThumbnail.webp",
+      imgAlt: "Pixel Pulse Learning Thumbnail",
+      description: "I built a simulated WooCommerce website to sell computer courses as downloadable products. This project, developed for learning purposes, demonstrates my expertise in WordPress, WooCommerce, and Advanced Custom Fields (ACF). It allowed me to gain practical experience in e-commerce setup, product configuration, payment gateway integration, and ACF customization. The site boasts responsive design and seamless e-commerce functionality, showcasing my web development skills.",
+      skillList: ["Wordpress","PHP","HTML" ,"CSS","Bootstrap"],
+      githubUrl: "https://github.com/Jenna-Deamer/comp2109-final-project",
+      demoUrl: "https://pixelpulselearning.flywheelsites.com/",
+      extraInfo: "To view live demo enter: Username: pixel demo Password: password",
+    },
+
     {
       title: "Book Management App",
       imgUrl: "/images/thumbnails/bookAppThumbnail.webp",
@@ -21,19 +32,9 @@ function Projects() {
       skillList: ["Vite", "React","CSS","Bootstrap","HTML"],
       githubUrl: "https://github.com/Jenna-Deamer/COMP2112-Assignment2",
       demoUrl: "https://comp-2112-assignment2.vercel.app/",
+
     },
-    {
-      title: "Automoblox Redesign",
-      imgUrl: "/images/thumbnails/AutomobloxThumbnail.webp",
-      imgAlt: "Automoblox Redesign Thumbnail",
-      description:
-        "Transformed the classic Automoblox website with improved user experience and modern design.",
-      skillText: "HTML | CSS | Javascript | Bootstrap",
-      skillList: ["Vite", "React","CSS","Bootstrap","HTML"],
-      githubUrl: "https://github.com/Jenna-Deamer/Automoblox-Redesign",
-      demoUrl: "https://automoblox-comp2081.netlify.app/",
-    },
-   
+
   ];
 
   return (
@@ -48,32 +49,36 @@ function Projects() {
             <h2 className="projectTitle">{card.title}</h2>
             <div className="projectImageSide">
               <img
-                src={card.imgUrl}
-                alt={card.imgAlt}
-                className="pb-2 img-fluid"
+                  src={card.imgUrl}
+                  alt={card.imgAlt}
+                  className="pb-2 img-fluid"
               />
               <div className="buttonsWrapper pt-2">
                 <a
-                  href={card.demoUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btnPrimary"
-                  aria-label="Visit the live demo"
+                    href={card.demoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btnPrimary"
+                    aria-label="Visit the live demo"
                 >
                   <i className="bi bi-laptop"></i> Demo
                 </a>
                 <a
-                  href={card.githubUrl}
-                  className="btnSecondary"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Visit the github repository"
+                    href={card.githubUrl}
+                    className="btnSecondary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit the github repository"
                 >
                   <i className="bi bi-github"></i> Github
                 </a>
               </div>
+              {card.extraInfo && card.extraInfo !== "" && ( // if projectCard exists and is not empty add p tag.
+                  // Fixes spacing issues for cards without extraInfo
+                  <p className="demoInfo mt-2 text-center">{card.extraInfo}</p>
+              )}
             </div>
-            
+
             <div className="projectDescSide">
               <p className="projectDescription">{card.description}</p>
               <ul className="projectSkillsContainer">
