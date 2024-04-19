@@ -39,13 +39,14 @@ function Projects() {
   return (
     <>
       <section className="container mb-4" id="projectsContainer">
+        <h1 className="text-center mb-5">Explore My Projects</h1>
         {projectCards.map((card, index) => (
           //Dynamically add class even or odd based on remainder of index.
           //if remainder is 0 it is true and gets the even class.
           // If not 0. it results false giving item odd class
           <article key={index} className={`projectCard ${index % 2 === 0 ? 'even' : 'odd'}`}>
-            <h1 className="projectTitle">{card.title}</h1>
-            <div className="ProjectImageSide">
+            <h2 className="projectTitle">{card.title}</h2>
+            <div className="projectImageSide">
               <img
                 src={card.imgUrl}
                 alt={card.imgAlt}
