@@ -15,7 +15,7 @@ function Projects() {
       title: "Simulated Woocommerce Site",
       imgUrl: "/images/thumbnails/PixelPulseLearningThumbnail.webp",
       imgAlt: "Pixel Pulse Learning Thumbnail",
-      description: "I built a simulated WooCommerce website to sell computer courses as downloadable products. This project, developed for learning purposes, demonstrates my expertise in WordPress, WooCommerce, and Advanced Custom Fields (ACF). It allowed me to gain practical experience in e-commerce setup, product configuration, payment gateway integration, and ACF customization. The site boasts responsive design and seamless e-commerce functionality, showcasing my web development skills.",
+      description: "I developed a WooCommerce website specifically designed for selling computer courses as downloadable products. Through this project, I demonstrated my proficiency in WordPress, WooCommerce, and Advanced Custom Fields (ACF). This project provided me with valuable hands-on experience in e-commerce setup, product configuration, payment gateway integration, and ACF customization. The website features a responsive design and seamless e-commerce functionality, effectively highlighting my expertise in web development.",
       skillList: ["Wordpress","PHP","HTML" ,"CSS","Bootstrap"],
       githubUrl: "https://github.com/Jenna-Deamer/comp2109-final-project",
       demoUrl: "https://pixelpulselearning.flywheelsites.com/",
