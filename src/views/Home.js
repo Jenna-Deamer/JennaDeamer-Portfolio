@@ -31,7 +31,7 @@ function Home() {
               className="col-md-6 order-md-1 order-sm-2"
               id="descriptionWrapper"
           >
-            <h1>Hi, I'm Jenna Deamer,</h1>
+            <h1>Hello, I'm Jenna Deamer,</h1>
             <p className="pt-2 pb-2 text-center">
               I am currently studying Interactive Media Design at Georgian College. I am
               Proficient in foundational languages like HTML, CSS, and
