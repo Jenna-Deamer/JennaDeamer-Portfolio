@@ -12,14 +12,13 @@ function Projects() {
 
     },
     {
-      title: "Simulated Woocommerce Site",
+      title: "Woocommerce Store",
       imgUrl: "/images/thumbnails/PixelPulseLearningThumbnail.webp",
       imgAlt: "Pixel Pulse Learning Thumbnail",
       description: "I developed a WooCommerce website specifically designed for selling computer courses as downloadable products. Through this project, I demonstrated my proficiency in WordPress, WooCommerce, and Advanced Custom Fields (ACF). This project provided me with valuable hands-on experience in e-commerce setup, product configuration, payment gateway integration, and ACF customization. The website features a responsive design and seamless e-commerce functionality, effectively highlighting my expertise in web development.",
       skillList: ["Wordpress","PHP","HTML" ,"CSS","Bootstrap"],
       githubUrl: "https://github.com/Jenna-Deamer/comp2109-final-project",
       demoUrl: "https://pixelpulselearning.flywheelsites.com/",
-      extraInfo: "To view live demo enter: Username: pixel demo Password: password",
     },
 
     {
@@ -73,10 +72,6 @@ function Projects() {
                   <i className="bi bi-github"></i> Github
                 </a>
               </div>
-              {card.extraInfo && card.extraInfo !== "" && ( // if projectCard exists and is not empty add p tag.
-                  // Fixes spacing issues for cards without extraInfo
-                  <p className="demoInfo mt-2 text-center">{card.extraInfo}</p>
-              )}
             </div>
 
             <div className="projectDescSide">
