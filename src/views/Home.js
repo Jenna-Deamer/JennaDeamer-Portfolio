@@ -1,20 +1,21 @@
 function Home() {
   const skills = [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "Angular",
-    "Express",
-    "Node.js",
-    "MySQL",
-    "MongoDB",
-    "PHP",
-    "WordPress",
     "Bootstrap",
+    "CSS",
+    "Drupal",
+    "Express",
+    "HTML",
+    "JavaScript",
+    "MongoDB",
+    "MySQL",
+    "Node.js",
+    "PHP",
+    "React",
     "Sass",
+    "TypeScript",
+    "WordPress",
   ];
+
   return (
     <>
       <section className="container pageContainer">
@@ -33,15 +34,7 @@ function Home() {
           >
             <h1>Hello, I'm Jenna Deamer,</h1>
             <p className="pt-2 pb-2 text-center">
-              Currently, I am studying Interactive Media Design at Georgian
-              College with a strong passion for creating immersive web
-              experiences. During my studies, I've developed a strong foundation
-              in design principles, user experience, and various web
-              technologies. Through hands-on projects, I have developed skills
-              in building innovative web solutions that prioritize
-              user experiences and functionality. I am enthusiastic about
-              continuing to learn and refine my abilities to create even more
-              engaging and user-friendly digital experiences.
+              I'm a passionate web developer at Napoleon, where I manage Napoleon.com, serving over 40 countries in multiple languages using Drupal. Currently, I’m completing my Interactive Media Design Diploma at Georgian College. In my free time, I love exploring new technologies and building exciting projects.
             </p>
 
             <div className="buttonsWrapper">
