@@ -34,8 +34,7 @@ function Home() {
           >
             <h1>Hello, I'm Jenna Deamer,</h1>
             <p className="pt-2 pb-2 text-center">
-              I'm a passionate web developer at Napoleon, where I manage Napoleon.com, serving over 40 countries in multiple languages using Drupal. Currently, I’m completing my Interactive Media Design Diploma at Georgian College. In my free time, I love exploring new technologies and building exciting projects.
-            </p>
+            I'm a passionate web developer at Napoleon, where I manage Napoleon.com, supporting over 40 countries in multiple languages through Drupal. Currently completing my Interactive Media Design Diploma at Georgian College, I’m always exploring new technologies and working on exciting projects in my spare time.            </p>
 
             <div className="buttonsWrapper">
               <a className="btnPrimary" href="/projects">
